@@ -81,6 +81,7 @@ font-family: 'Nunito Sans', sans-serif;
         
 }
 .input-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 8px;   
@@ -114,6 +115,7 @@ font-family: 'Nunito Sans', sans-serif;
 }
 
 .checkbox{
+    align-self: self-start;
     padding: 10px 14px 10px 20px;
     box-shadow: none;
     border-radius: 4.32px;
@@ -125,8 +127,7 @@ font-family: 'Nunito Sans', sans-serif;
 .btn{
     text-align: center;
     letter-spacing: normal;
-    /* width: 100%;
-    margin: 10px 14px 10px 14px; */
+    width: 100%;
     padding: 6px;
     font-size: 14.4px;
     line-height: 30px;
@@ -149,15 +150,6 @@ font-family: 'Nunito Sans', sans-serif;
     font-weight: 750;
 }
 
-/* footer {
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 2px 0px 8px;
-    border-top: 0.5px solid #ccc;
-    display: flex;
-    justify-content: end
-  } */
 .footer{
     margin-top: auto;
     border-top: 0.5px solid #ccc;

